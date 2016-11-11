@@ -35,6 +35,8 @@ step2
 -----
 
     git checkout step2
+    python manage.py runserver
+
 
 This has updated requirements.txt and settings.py and created a
 routes.py which is even to get Django to run with Channels. The view
@@ -46,6 +48,9 @@ step 3
 ------
 
     git checkout step3
+    python manage.py runserver
+
+
 
 A "notify" channel has been declared and the view now uses it. When you
 runserver the website is more responsive, but if you hammer it those
