@@ -1,3 +1,8 @@
 from channels.routing import route
 
-channel_routing = []
+from hello import consumers
+
+
+channel_routing = [
+    route('notify', consumers.notify),
+]
